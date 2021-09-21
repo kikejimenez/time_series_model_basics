@@ -18,6 +18,6 @@ modules = ["moving_average.py",
 
 doc_url = "https://kikejimenez.github.io/time_series_model_basics/"
 
-git_url = "https://github.com/kikejimenez/time_series_model_basics/tree/{branch}/"
+git_url = "https://github.com/kikejimenez/time_series_model_basics/tree/master/"
 
 def custom_doc_links(name): return None

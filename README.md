@@ -4,7 +4,7 @@
 
 ## Install
 
-`pip install your_project_name`
+`pip install time-series-model-basics`
 
 ## Simple Moving Average
 
@@ -38,7 +38,7 @@ df, fig = SMA(1, 4)
 fig.write_image("images/wma.png")
 ```
 
-<img src="nbs/images/wma.png" width="700" height="20" style="max-width: 700px">
+<img src="nbs/images/wma.png" width="700" height="400" style="max-width: 700px">
 
 ## Simple Smoothing 
 
@@ -48,7 +48,7 @@ Plot a Simulated Time Series with two or  any number of simple exponential smoot
 from time_series_model_basics.smoothing import SIMPLE
 
 df, fig = SIMPLE(.15, .5)
-fig.write_image("images/simple.png")
+fig.write_image("images/simple.png",)
 ```
 
 <img src="nbs/images/simple.png" width="700" height="400" style="max-width: 700px">

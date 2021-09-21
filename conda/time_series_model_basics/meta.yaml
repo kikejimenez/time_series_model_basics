@@ -1,0 +1,50 @@
+package:
+  name: time_series_model_basics
+  version: 0.0.1
+source:
+  sha256: 4ee87c9d5469149644dcce3fdfb900702f5b655d3966ce4b341ab4768c7f309a
+  url: https://files.pythonhosted.org/packages/b3/5c/df537adfae48939b255ec202f2d344c37339a38a975fdb07c936cd439701/time_series_model_basics-0.0.1.tar.gz
+about:
+  dev_url: https://kikejimenez.github.io
+  doc_url: https://kikejimenez.github.io
+  home: https://kikejimenez.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: Put a description
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - kikejimenez
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  - numpy
+  - pandas
+  - scipy
+  - numba
+  - matplotlib
+  - plotly
+  - sklearn
+  - kaleido
+  - twine
+  run:
+  - pip
+  - python
+  - packaging
+  - numpy
+  - pandas
+  - scipy
+  - numba
+  - matplotlib
+  - plotly
+  - sklearn
+  - kaleido
+  - twine
+test:
+  imports:
+  - time_series_model_basics
