@@ -1,8 +1,6 @@
 # Forecasting Basics
-> Fundamental Algorithms in Forecasting
+> <a href='https://github.com/kikejimenez/time_series_model_basics'>Documentation and Code is hosted on Github</a>  
 
-
-> [Documentation and Code is hosted on Github](https://github.com/kikejimenez/time_series_model_basics)  
 
 > Generate and Plot Forecasts for Time Series Data 
 
@@ -41,7 +39,6 @@ For the case of  Weighted Moving Averages, pass the weights as lists:
 from time_series_model_basics.moving_average import WMA
 
 df,fig = WMA([1,1,2],[3,2])
-df, fig = SMA(1, 4)
 
 fig.write_image("images/wma.png")
 ```
