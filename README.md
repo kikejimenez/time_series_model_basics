@@ -1,5 +1,11 @@
 # Forecasting Basics
-> Generate and Plot Forecasts for Time Series Data 
+> Fundamental Algorithms in Forecasting
+
+
+> [Documentation and Code is hosted on Github](https://github.com/kikejimenez/time_series_model_basics)  > Generate and Plot Forecasts for Time Series Data 
+
+
+> Includes:SMA, WMA and Single and Double Exponential Smoothing 
 
 
 ## Install
