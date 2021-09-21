@@ -4,7 +4,9 @@
 
 ## Install
 
-`pip install time-series-model-basics`
+```bash
+pip install time-series-model-basics
+```
 
 ## Simple Moving Average
 
