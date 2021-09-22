@@ -2,18 +2,20 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"random_time_series": "01_Smoothing.ipynb",
-         "simple": "00_Moving_Average.ipynb",
-         "weighted": "00_Moving_Average.ipynb",
-         "SMA": "00_Moving_Average.ipynb",
-         "WMA": "00_Moving_Average.ipynb",
-         "__simple": "01_Smoothing.ipynb",
-         "__double": "01_Smoothing.ipynb",
-         "holt_winters": "01_Smoothing.ipynb",
-         "SIMPLE": "01_Smoothing.ipynb",
-         "DOUBLE": "01_Smoothing.ipynb"}
+index = {"__numpy_time_series": "00_SimulateData.ipynb",
+         "pandas_time_series": "00_SimulateData.ipynb",
+         "simple": "01_Moving_Average.ipynb",
+         "weighted": "01_Moving_Average.ipynb",
+         "SMA": "01_Moving_Average.ipynb",
+         "WMA": "01_Moving_Average.ipynb",
+         "__single": "02_Smoothing.ipynb",
+         "__double": "02_Smoothing.ipynb",
+         "holt_winters": "02_Smoothing.ipynb",
+         "SINGLE": "02_Smoothing.ipynb",
+         "DOUBLE": "02_Smoothing.ipynb"}
 
-modules = ["moving_average.py",
+modules = ["simulate_data.py",
+           "moving_average.py",
            "smoothing.py"]
 
 doc_url = "https://kikejimenez.github.io/time_series_model_basics/"
