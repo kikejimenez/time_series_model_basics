@@ -111,6 +111,57 @@ nb_path: "nbs/index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Forecast with dataframe as follows:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s1">&#39;../data/Electric_Production.csv&#39;</span><span class="p">,</span>
+    <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;DATE&#39;</span><span class="p">,</span>
+    <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">],</span>
+<span class="p">)</span>
+<span class="n">ts_col</span> <span class="o">=</span> <span class="s1">&#39;Electric Production&#39;</span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">ts_col</span><span class="p">]</span>
+<span class="n">_</span><span class="p">,</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">SMA</span><span class="p">(</span>
+    <span class="mi">4</span><span class="p">,</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+    <span class="n">ts_col</span><span class="o">=</span><span class="n">ts_col</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">autosize</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">1100</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">450</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.8</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;images/elec_prod_sma.png&quot;</span><span class="p">,)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html width="700" height="400" max-width="700" file="/time_series_model_basics/images/elec_prod_sma.png" %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Weighted-Moving-Average">Weighted Moving Average<a class="anchor-link" href="#Weighted-Moving-Average"> </a></h2>
 </div>
 </div>
@@ -170,10 +221,10 @@ nb_path: "nbs/index.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">time_series_model_basics.smoothing</span> <span class="kn">import</span> <span class="n">SIMPLE</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">time_series_model_basics.smoothing</span> <span class="kn">import</span> <span class="n">SINGLE</span>
 
-<span class="n">df</span><span class="p">,</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">SIMPLE</span><span class="p">(</span><span class="o">.</span><span class="mi">15</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;images/simple.png&quot;</span><span class="p">,)</span>
+<span class="n">df</span><span class="p">,</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">SINGLE</span><span class="p">(</span><span class="o">.</span><span class="mi">15</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="s2">&quot;images/sma.png&quot;</span><span class="p">,)</span>
 </pre></div>
 
     </div>
@@ -222,6 +273,15 @@ nb_path: "nbs/index.ipynb"
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>{% include image.html width="700" height="400" max-width="700" file="/time_series_model_basics/images/double.png" %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Author">Author<a class="anchor-link" href="#Author"> </a></h2><ul>
+<li>Enrique Jimenez</li>
+</ul>
 
 </div>
 </div>

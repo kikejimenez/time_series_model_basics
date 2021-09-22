@@ -10,6 +10,9 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
+      title: Simulated Time Series
+      url: SimulateData.html
+    - output: web,pdf
       title: Moving Averages
       url: Moving_Average.html
     - output: web,pdf

@@ -1,6 +1,7 @@
 {
   "time_series_model_basics": {
     "Overview": "/",
+    "Simulated Time Series": "SimulateData.html",
     "Moving Averages": "Moving_Average.html",
     "Smoothing": "Smoothing.html"
   }

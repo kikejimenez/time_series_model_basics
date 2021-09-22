@@ -31,6 +31,34 @@ When running on a notebook you may alternatively use
 fig.show()
 ```
 
+Forecast with dataframe as follows:
+
+```python
+import pandas as pd
+
+df = pd.read_csv(
+    '../data/Electric_Production.csv',
+    index_col='DATE',
+    parse_dates=['DATE'],
+)
+ts_col = 'Electric Production'
+df.columns = [ts_col]
+_, fig = SMA(
+    4,
+    df=df,
+    ts_col=ts_col,
+)
+fig.update_layout(
+    autosize=False,
+    width=1100,
+    height=450,
+)
+fig.update_traces(line=dict(width=0.8))
+fig.write_image("images/elec_prod_sma.png",)
+```
+
+<img src="nbs/images/elec_prod_sma.png" width="700" height="400" style="max-width: 700px">
+
 ## Weighted Moving Average
 
 For the case of  Weighted Moving Averages, pass the weights as lists:
@@ -50,10 +78,10 @@ fig.write_image("images/wma.png")
 Plot a Simulated Time Series with two or  any number of simple exponential smoothing as follows:
 
 ```python
-from time_series_model_basics.smoothing import SIMPLE
+from time_series_model_basics.smoothing import SINGLE
 
-df, fig = SIMPLE(.15, .5)
-fig.write_image("images/simple.png",)
+df, fig = SINGLE(.15, .5)
+fig.write_image("images/sma.png",)
 ```
 
 <img src="nbs/images/simple.png" width="700" height="400" style="max-width: 700px">
@@ -71,3 +99,7 @@ fig.write_image("images/double.png")
 ```
 
 <img src="nbs/images/double.png" width="700" height="400" style="max-width: 700px">
+
+## Author
+
+- Enrique Jimenez
