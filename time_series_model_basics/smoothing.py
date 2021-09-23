@@ -153,7 +153,7 @@ def SINGLE(*args, df=None, ts_col='time_series', **kwargs):
 
     fig = df.plot(
         backend='plotly',
-        title=f'Simple Moving Average',
+        title=f'Single Smoothing',
     )
 
     fig.update_layout(template="plotly_dark",)
@@ -194,7 +194,7 @@ def DOUBLE(*args, df=None, ts_col='time_series', **kwargs):
 
     fig = df.plot(
         backend='plotly',
-        title=f'Simple Moving Average',
+        title=f'Double Smoothing',
     )
 
     fig.update_layout(template="plotly_dark",)

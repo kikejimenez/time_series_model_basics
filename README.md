@@ -81,10 +81,10 @@ Plot a Simulated Time Series with two or  any number of simple exponential smoot
 from time_series_model_basics.smoothing import SINGLE
 
 df, fig = SINGLE(.15, .5)
-fig.write_image("images/sma.png",)
+fig.write_image("images/single.png",)
 ```
 
-<img src="nbs/images/simple.png" width="700" height="400" style="max-width: 700px">
+<img src="nbs/images/single.png" width="700" height="400" style="max-width: 700px">
 
 ## Double Smoothing 
 
