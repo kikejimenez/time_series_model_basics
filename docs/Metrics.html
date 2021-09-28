@@ -704,9 +704,11 @@ f :  np.array with the forecast</p>
 </blockquote>
 <p>Summary of Prediction Metrics</p>
 <hr>
-<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>df : dataframe
-val_col : str .  Name of the column with the actual values
-pred_cols : List[str] . Names of the columns with the predictions for the values</p>
+<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>df : dataframe , dafault None. If None it will generate a simulated dataframe.
+val_col : str , default None.  Name of the column with the actual values.
+          It should be provided when a datafre is provided.
+pred_cols : List[str] . Names of the columns with the predictions for the values
+          If not provided it will take all dataframe columns except val_col</p>
 <hr>
 <h2 id="Returns">Returns<a class="anchor-link" href="#Returns"> </a></h2><p>dataframe : Summary results</p>
 

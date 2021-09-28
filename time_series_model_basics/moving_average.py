@@ -20,8 +20,7 @@ def simple(
     if n > l:
         raise Exception('n should be less than the length of the time-series')
 
-    f = np.zeros((l,))
-    f[:n] = np.full(n, np.nan)
+    f = np.full((l,), np.nan)
 
     for i in range(l - n + 1):
         f[n + i] = np.mean(ts[i:n + i])

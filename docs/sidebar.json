@@ -2,9 +2,11 @@
   "time_series_model_basics": {
     "Overview": "/",
     "Simulated Time Series": "SimulateData.html",
-    "Moving Averages": "Moving_Average.html",
+    "Moving Averages": "MovingAverage.html",
     "Smoothing": "Smoothing.html",
     "Metrics": "Metrics.html",
-    "Title": "Untitled.html"
+    "Optimizers": "Optimizers.html",
+    "SuperStore Data": "SuperStoreData.html",
+    "Title": "Benchmarks.html"
   }
 }

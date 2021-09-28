@@ -8,6 +8,7 @@ from numba import jit
 import pandas as pd
 
 from time_series_model_basics import simulate_data
+from statsmodels.tsa.api import ExponentialSmoothing, SimpleExpSmoothing, Holt
 
 # Cell
 def __single(

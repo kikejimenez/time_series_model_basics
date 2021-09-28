@@ -14,7 +14,7 @@ entries:
       url: SimulateData.html
     - output: web,pdf
       title: Moving Averages
-      url: Moving_Average.html
+      url: MovingAverage.html
     - output: web,pdf
       title: Smoothing
       url: Smoothing.html
@@ -22,8 +22,14 @@ entries:
       title: Metrics
       url: Metrics.html
     - output: web,pdf
+      title: Optimizers
+      url: Optimizers.html
+    - output: web,pdf
+      title: SuperStore Data
+      url: SuperStoreData.html
+    - output: web,pdf
       title: Title
-      url: Untitled.html
+      url: Benchmarks.html
     output: web
     title: time_series_model_basics
   output: web
