@@ -18,6 +18,12 @@ entries:
     - output: web,pdf
       title: Smoothing
       url: Smoothing.html
+    - output: web,pdf
+      title: Metrics
+      url: Metrics.html
+    - output: web,pdf
+      title: Title
+      url: Untitled.html
     output: web
     title: time_series_model_basics
   output: web

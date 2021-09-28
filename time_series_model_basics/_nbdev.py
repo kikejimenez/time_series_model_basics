@@ -4,19 +4,36 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"__numpy_time_series": "00_SimulateData.ipynb",
          "pandas_time_series": "00_SimulateData.ipynb",
-         "simple": "01_Moving_Average.ipynb",
-         "weighted": "01_Moving_Average.ipynb",
-         "SMA": "01_Moving_Average.ipynb",
-         "WMA": "01_Moving_Average.ipynb",
+         "simple": "01_MovingAverage.ipynb",
+         "weighted": "01_MovingAverage.ipynb",
+         "__moving_average": "01_MovingAverage.ipynb",
+         "SMA": "01_MovingAverage.ipynb",
+         "WMA": "01_MovingAverage.ipynb",
          "__single": "02_Smoothing.ipynb",
          "__double": "02_Smoothing.ipynb",
          "holt_winters": "02_Smoothing.ipynb",
+         "__smoothing": "02_Smoothing.ipynb",
          "SINGLE": "02_Smoothing.ipynb",
-         "DOUBLE": "02_Smoothing.ipynb"}
+         "DOUBLE": "02_Smoothing.ipynb",
+         "__total_error": "03_Metrics.ipynb",
+         "__absolute_error": "03_Metrics.ipynb",
+         "__squared_error": "03_Metrics.ipynb",
+         "__mean_error": "03_Metrics.ipynb",
+         "__mean_absolute_error": "03_Metrics.ipynb",
+         "__mean_squared_error": "03_Metrics.ipynb",
+         "__root_mean_square_error": "03_Metrics.ipynb",
+         "__mean_percentage_error": "03_Metrics.ipynb",
+         "__mean_absolute_percent_error": "03_Metrics.ipynb",
+         "SUMMARY": "03_Metrics.ipynb",
+         "minimize_objective": "04_Optimizers.ipynb",
+         "minimize_simple_smoothing": "04_Optimizers.ipynb",
+         "minimize_double_smoothing": "04_Optimizers.ipynb"}
 
 modules = ["simulate_data.py",
            "moving_average.py",
-           "smoothing.py"]
+           "smoothing.py",
+           "metrics.py",
+           "optimizers.py"]
 
 doc_url = "https://kikejimenez.github.io/time_series_model_basics/"
 
